@@ -37,7 +37,15 @@ def data():
                 hobby != "y"
                 break
 
-        information.append({"name":name, "age":age, "birthday": birthday, "address":address, "course":course, "pet":pet, "hobby":hobby})
+        information.append({
+            "Name":name, 
+            "Age":age, 
+            "Birthday": birthday, 
+            "Address":address, 
+            "Course":course, 
+            "Pet":pet_type, 
+            "Hobby":hobby_kind
+            })
 
         retry = input("Do you want to enter another set of data?(y/n) ").lower()
 
@@ -46,6 +54,11 @@ def data():
 
     return information
 
-mainloop = data
+def main():
+    information = data()
 
-mainloop()
+    print("\nList of Information Entered:")
+    for person in information:
+        print(f"Name: {person['Name']}, Age: {person['Age']}, Birthday: {person['Birthday']}, Address: {person['Address']}, Course: {person['Course']}, Pet: {person['Pet']}, Hobby: {person['Hobby']}")
+
+main()
