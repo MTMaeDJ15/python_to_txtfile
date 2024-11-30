@@ -1,0 +1,8 @@
+Name: Mae
+Age: 18
+Birthday: 12/19/05
+Address: Imus, Cavite
+Course: BSCPE
+Pet: Cat
+Hobby: Reading
+------------------------------

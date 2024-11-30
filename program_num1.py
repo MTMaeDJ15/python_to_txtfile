@@ -13,7 +13,7 @@ def data():
                 break
             else: 
                 len(str(age)) >= 2
-                print(" Please Input Two Digit Number! ")
+                print(" Please Input a! ")
 
         birthday = (input("When is your birthday? "))
         address = input("Which City and Province do you live in? ")
@@ -56,6 +56,17 @@ def data():
 
 def main():
     information = data()
+
+    with open("./python_to_txtfile.txt","a") as file_handle: 
+        for person in information:
+            file_handle.write(f"Name: {person['Name']}\n")
+            file_handle.write(f"Age: {person['Age']}\n")
+            file_handle.write(f"Birthday: {person['Birthday']}\n")
+            file_handle.write(f"Address: {person['Address']}\n")
+            file_handle.write(f"Course: {person['Course']}\n")
+            file_handle.write(f"Pet: {person['Pet']}\n")
+            file_handle.write(f"Hobby: {person['Hobby']}\n")
+            file_handle.write("-" * 30 + "\n")
 
     print("\nList of Information Entered:")
     for person in information:
