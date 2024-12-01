@@ -6,14 +6,14 @@ Create a program that ask user for personal information. Minimum of 5 informatio
 def data():
     information = [] 
     while True:
-        name = input("What is your Name? ")
+        name = input("What is your Name?(Sn, Fn M.I) ")
         while True:    
             age = int(input("How old are you? "))
             if len(str(age)) <= 2:
                 break
             else: 
                 len(str(age)) >= 2
-                print(" Please Input a! ")
+                print(" Please Input Two Digit Number! ")
 
         birthday = (input("When is your birthday? "))
         address = input("Which City and Province do you live in? ")
@@ -66,7 +66,7 @@ def main():
             file_handle.write(f"Course: {person['Course']}\n")
             file_handle.write(f"Pet: {person['Pet']}\n")
             file_handle.write(f"Hobby: {person['Hobby']}\n")
-            file_handle.write("-" * 30 + "\n")
+            file_handle.write("-" * 100 + "\n")
 
     print("\nList of Information Entered:")
     for person in information:

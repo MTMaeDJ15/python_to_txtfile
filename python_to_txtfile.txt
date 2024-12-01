@@ -1,8 +1,8 @@
-Name: Mae
+Name: Oozora, Yuki
 Age: 18
-Birthday: 12/19/05
-Address: Imus, Cavite
+Birthday: 05/15/06
+Address: Tokyo
 Course: BSCPE
 Pet: Cat
-Hobby: Reading
-------------------------------
+Hobby: Gaming
+----------------------------------------------------------------------------------------------------
