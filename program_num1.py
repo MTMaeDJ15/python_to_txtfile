@@ -13,10 +13,10 @@ def data():
                 break
             else: 
                 len(str(age)) >= 2
-                print(" Please Input Two Digit Number! ")
+                print(" Please Input a Valid Age Number! ")
 
         birthday = (input("When is your birthday? "))
-        address = input("Which City and Province do you live in? ")
+        address = input("Where do you live in? ")
         course = input("What course are you studying currently? ")
 
         while True: 
