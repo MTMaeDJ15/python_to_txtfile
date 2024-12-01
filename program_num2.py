@@ -9,11 +9,12 @@ def search_in_file():
         print(f"\nSearching for '{name_to_search}' in the file...")
         lines = file_handle.readlines()
 
-    for i in range(0, len(lines), 7):
+    for i in range(0, len(lines), 8):
         if name_to_search.lower() in lines[i].lower():
             found = True 
-            print("".join(lines[i:i+7]))
+            print("".join(lines[i:i+8]))
 
     if not found: 
         print("Not Found!")
+
 search_in_file() 
