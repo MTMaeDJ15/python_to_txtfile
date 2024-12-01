@@ -4,9 +4,16 @@ Create another program that ask user for fullname. Find the full name in the txt
 '''
 def search_in_file():
     name_to_search = input("Enter the Name(Sn, Fn M.I) of the person you want to find: ")
-
+    found = False
     with open("./python_to_txtfile.txt", "r") as file_handle:
         print(f"\nSearching for '{name_to_search}' in the file...")
         lines = file_handle.readlines()
 
-search_in_file()
+    for i in range(0, len(lines), 7):
+        if name_to_search.lower() in lines[i].lower():
+            found = True 
+            print("".join(lines[i:i+7]))
+
+    if not found: 
+        print("Not Found!")
+search_in_file() 
